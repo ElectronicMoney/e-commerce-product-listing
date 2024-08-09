@@ -7,29 +7,13 @@ import CardActions from '@mui/material/CardActions';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Rating from '@mui/material/Rating';
+import {ProductProps} from "@/types"
+import { formatMoney , truncateDescription } from "@/utils"
 
 
-interface ProductCardProps {
-  image: string;
-  title: string;
-  description: string;
-  price: number;
-  rating: number; // Assuming rating is a number between 0 and 5
-  onAddToCart: () => void;
-}
 
 
-const truncateDescription = (text: string, maxLength: number = 100) => {
-  if (text.length <= maxLength) return text;
-  return text.substring(0, maxLength) + '...';
-};
-
-const formatPrice = (price: number) => {
-  return `$${price.toFixed(2)}`;
-};
-
-
-const ProductCard: React.FC<ProductCardProps> = ({ image, title, description, price, rating, onAddToCart }) => {
+const ProductCard: React.FC<ProductProps> = ({ id, title, description, price, currency, image, rating }) => {
   return (
     <Card sx={{ maxWidth: 345 }}>
       <CardMedia
@@ -46,17 +30,17 @@ const ProductCard: React.FC<ProductCardProps> = ({ image, title, description, pr
           {truncateDescription(description)}
         </Typography>
 
-        <Typography gutterBottom variant="body2" component="div">
-          {formatPrice(price)}
+        <Typography gutterBottom variant="h6" component="div" sx={{mt:2}}>
+          {formatMoney(price, currency)}
         </Typography>
 
-        <Typography gutterBottom variant="body2" component="div">
+        <Typography gutterBottom variant="h6" component="div" sx={{mt:2}}>
           <Rating name="half-rating-read" defaultValue={rating} precision={0.5} readOnly />
         </Typography>
 
       </CardContent>
       <CardActions>
-        <Button size="small" onClick={onAddToCart}>Add To Cart</Button>
+        <Button variant="contained" defaultValue={id}> Add To Cart</Button>
       </CardActions>
     </Card>
   );

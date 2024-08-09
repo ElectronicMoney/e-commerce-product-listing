@@ -3,19 +3,20 @@
 import ProductCard from '@/components/ProductCard';
 
 
-const sampleProduct = {
-  image: 'https://via.placeholder.com/150',
-  name: 'Sample Product',
+const product = {
+  id: 1,
+  title: 'Sample Product',
   description: 'This is a sample product description that is quite long but will be truncated.',
   price: 29.99,
-  rating: 2.5,
-  onAddToCart: () => alert('Added to cart'),
+  currency: "USD",
+  image: 'https://via.placeholder.com/150',
+  rating: 4.5,
 };
 
 const HomePage = () => {
   return (
     <div className="flex justify-center items-center min-h-screen bg-gray-100 p-4">
-      <ProductCard {...sampleProduct} />
+      <ProductCard {...product} />
     </div>
   );
 };
