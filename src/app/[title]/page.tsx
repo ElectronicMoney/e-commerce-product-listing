@@ -28,12 +28,12 @@ export async function generateMetadata({ params }: { params: { title: string } }
 
   return {
 
-    title: `BisaTech - ${product.title}`,
+    title: `E-Store - ${product.title}`,
     description: `${product.description}`,
     keywords: ["product", "meta keywords", "is", "very", "important", "for", "seo"],
 
     openGraph: {
-      title: `BisaTech - ${product.title}`,
+      title: `E-Store - ${product.title}`,
       description: `${product.description}`,
       images: [
         {
