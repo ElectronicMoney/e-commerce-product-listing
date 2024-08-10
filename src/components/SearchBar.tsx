@@ -44,6 +44,7 @@ export default function SearchBar({
           size='small'
           id="outlined-start-search-bar"
           fullWidth
+          placeholder='Search Products By Title...'
           value={searchTerm}
           onChange={handleSearchChange}
           InputProps={{
