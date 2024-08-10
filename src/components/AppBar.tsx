@@ -27,7 +27,7 @@ export default function MenuAppBar() {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar>
     <Toolbar>
         <IconButton
         size="large"
@@ -40,7 +40,7 @@ export default function MenuAppBar() {
         </IconButton>
 
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            ESTORE
+            PRODUCTS
         </Typography>
 
         <div>

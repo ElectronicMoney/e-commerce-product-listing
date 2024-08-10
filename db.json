@@ -1,0 +1,143 @@
+{
+  "products": [
+    {
+        "id": 1,
+        "title": "This is a sample product first title",
+        "description": "This is a sample product description that is quite long but will be truncated down to a reasonable length of one hundred.",
+        "price": 29.99,
+        "currency": "USD",
+        "image": "https://via.placeholder.com/150",
+        "rating": 4.5
+    },
+
+    {
+        "id": 2,
+        "title": "This is a sample product second title",
+        "description": "This is a sample product description that is quite long but will be truncated down to a reasonable length of one hundred.",
+        "price": 48.99,
+        "currency": "USD",
+        "image": "https://via.placeholder.com/150",
+        "rating": 4.5
+    },
+    {
+        "id": 3,
+        "title": "This is a sample product third title",
+        "description": "This is a sample product description that is quite long but will be truncated down to a reasonable length of one hundred.",
+        "price": 36.99,
+        "currency": "USD",
+        "image": "https://via.placeholder.com/150",
+        "rating": 5
+    },
+    {
+        "id": 4,
+        "title": "This is a sample product fourth title",
+        "description": "This is a sample product description that is quite long but will be truncated down to a reasonable length of one hundred.",
+        "price": 78.99,
+        "currency": "USD",
+        "image": "https://via.placeholder.com/150",
+        "rating": 3.5
+    },
+    {
+        "id": 5,
+        "title": "This is a sample product fifth title",
+        "description": "This is a sample product description that is quite long but will be truncated down to a reasonable length of one hundred.",
+        "price": 61.99,
+        "currency": "USD",
+        "image": "https://via.placeholder.com/150",
+        "rating": 3.5
+    },
+        {
+        "id": 6,
+        "title": "This is a sample product sixth title",
+        "description": "This is a sample product description that is quite long but will be truncated down to a reasonable length of one hundred.",
+        "price": 24.99,
+        "currency": "USD",
+        "image": "https://via.placeholder.com/150",
+        "rating": 4.5
+    },
+        {
+        "id": 7,
+        "title": "This is a sample product seventh title",
+        "description": "This is a sample product description that is quite long but will be truncated down to a reasonable length of one hundred.",
+        "price": 36.99,
+        "currency": "USD",
+        "image": "https://via.placeholder.com/150",
+        "rating": 2.5
+    },
+    {
+        "id": 8,
+        "title": "This is a sample product eighieth title",
+        "description": "This is a sample product description that is quite long but will be truncated down to a reasonable length of one hundred.",
+        "price": 73.99,
+        "currency": "USD",
+        "image": "https://via.placeholder.com/150",
+        "rating": 4.5
+    },
+        {
+        "id": 9,
+        "title": "This is a sample product ninth title",
+        "description": "This is a sample product description that is quite long but will be truncated down to a reasonable length of one hundred.",
+        "price": 81.99,
+        "currency": "USD",
+        "image": "https://via.placeholder.com/150",
+        "rating": 4.5
+    },
+        {
+        "id": 10,
+        "title": "This is a sample product tenth title",
+        "description": "This is a sample product description that is quite long but will be truncated down to a reasonable length of one hundred.",
+        "price": 56.99,
+        "currency": "USD",
+        "image": "https://via.placeholder.com/150",
+        "rating": 5
+    },
+        {
+        "id": 11,
+        "title": "This is a sample product eleventh title",
+        "description": "This is a sample product description that is quite long but will be truncated down to a reasonable length of one hundred.",
+        "price": 73.99,
+        "currency": "USD",
+        "image": "https://via.placeholder.com/150",
+        "rating": 4.5
+    },
+        {
+        "id": 12,
+        "title": "This is a sample product twefth title",
+        "description": "This is a sample product description that is quite long but will be truncated down to a reasonable length of one hundred.",
+        "price": 71.99,
+        "currency": "USD",
+        "image": "https://via.placeholder.com/150",
+        "rating": 5
+    },
+
+    {
+        "id": 13,
+        "title": "This is a sample product thirtheenth title",
+        "description": "This is a sample product description that is quite long but will be truncated down to a reasonable length of one hundred.",
+        "price": 51.99,
+        "currency": "USD",
+        "image": "https://via.placeholder.com/150",
+        "rating": 5
+    },
+    {
+        "id": 14,
+        "title": "This is a sample product foutheenth title",
+        "description": "This is a sample product description that is quite long but will be truncated down to a reasonable length of one hundred.",
+        "price": 43.99,
+        "currency": "USD",
+        "image": "https://via.placeholder.com/150",
+        "rating": 5
+    },
+    {
+        "id": 15,
+        "title": "This is a sample product fiftheenth title",
+        "description": "This is a sample product description that is quite long but will be truncated down to a reasonable length of one hundred.",
+        "price": 26.99,
+        "currency": "USD",
+        "image": "https://via.placeholder.com/150",
+        "rating": 5
+    }
+  ]
+ 
+}
+

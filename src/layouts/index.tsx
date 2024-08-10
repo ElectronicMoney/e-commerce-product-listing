@@ -59,9 +59,8 @@ export default function MainLayout({children}: Props) {
       <MainAppBar />
       <Toolbar id="back-to-top-anchor" />
       <Container maxWidth="xl">
-         <Box component={"main"}>
+         <Box component={"main"} sx={{mx:4, mt:4}}>
           {children}
-          {/* Consultation */}
         </Box>
       </Container>
   

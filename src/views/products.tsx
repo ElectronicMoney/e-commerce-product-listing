@@ -1,24 +1,31 @@
-"use client"
-// pages/index.tsx
-import ProductCard from '@/components/ProductCard';
+import React, {lazy, Suspense} from 'react';
+import NotFound from "@/components/NotFound"
+
+import { ProductType, ProductListType } from '@/types';
+import { getProducts } from '@/utils';
+import ProductSkeleton from '@/components/productSkeleton';
+import ProductList from './productList';
 
 
-const product = {
-  id: 1,
-  title: 'Sample Product',
-  description: 'This is a sample product description that is quite long but will be truncated.',
-  price: 29.99,
-  currency: "USD",
-  image: 'https://via.placeholder.com/150',
-  rating: 4.5,
+// Server component
+const ProductsPage = async () => {
+
+  // Fetch product data
+  try {
+    const products: ProductListType = await getProducts(1, 10);
+
+    if (!products) {
+      return <NotFound message={"Oops! It looks like there are no products published yet. Please check back soon for updates!"} />
+    }
+
+    return (
+      <ProductList data={products} />
+    )
+        
+  } catch (error) {
+    console.error('Error fetching product:', error);
+    return <p>Failed to load product</p>;
+  }
 };
 
-const HomePage = () => {
-  return (
-    <div className="flex justify-center items-center min-h-screen bg-gray-100 p-4">
-      <ProductCard {...product} />
-    </div>
-  );
-};
-
-export default HomePage;
+export default ProductsPage;
