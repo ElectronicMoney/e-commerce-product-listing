@@ -1,5 +1,5 @@
-import React, {lazy, Suspense} from 'react';
 import NotFound from "@/components/NotFound"
+import Box from '@mui/material/Box';
 
 import { ProductType, ProductListType } from '@/types';
 import { getProducts } from '@/utils';
@@ -19,7 +19,9 @@ const ProductsPage = async () => {
     }
 
     return (
+
       <ProductList data={products} />
+    
     )
         
   } catch (error) {
