@@ -14,7 +14,6 @@ import { ProductListType } from '@/types';
 
 
 
-
 export default function ProductList({ data }: { data: ProductListType }) {
   const [page, setPage] = React.useState(1);
 
@@ -25,6 +24,7 @@ export default function ProductList({ data }: { data: ProductListType }) {
   const handleChange = (event: React.ChangeEvent<unknown>, value: number) => {
     setPage(value);
   };
+
 
   // Use initial data if available and avoid re-fetching on the first load
   const displayProducts = page === 1 && data ? data : products;

@@ -14,6 +14,11 @@ import {ProductType} from "@/types"
 import { createUrlFromTitleAndId, formatMoney , truncateDescription } from "@/utils"
 
 
+import { useDispatch } from 'react-redux';
+import {  AppDispatch } from '@/lib/store';
+import { addProduct } from '@/lib/features/cart/shoppingCartSlice';
+
+
 // Define the props interface
 interface ProductCardProps {
   product: ProductType;
@@ -22,6 +27,13 @@ interface ProductCardProps {
 // Update the component to use ProductDetailProps
 const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   const { id, title, description, price, currency, image, rating } = product;
+
+
+  const dispatch: AppDispatch = useDispatch();
+
+  const handleAddProduct = (product: ProductType) => {
+    dispatch(addProduct(product));
+  };
 
   
   return (
@@ -69,7 +81,9 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       </CardContent>
 
       <CardActions>
-        <Button variant="contained" defaultValue={id} fullWidth> Add To Cart</Button>
+        <Button variant="contained" onClick={() => handleAddProduct(product)} fullWidth> 
+          Add To Cart
+        </Button>
       </CardActions>
     </Card>
   );
